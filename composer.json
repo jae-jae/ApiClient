@@ -1,0 +1,19 @@
+{
+    "name": "jaeger/apiclient",
+    "authors": [
+        {
+            "name": "Jaeger",
+            "email": "JaegerCode@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "vlucas/phpdotenv": "^2.4",
+        "symfony/var-dumper": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jaeger\\": "src/"
+        }
+    }
+}
