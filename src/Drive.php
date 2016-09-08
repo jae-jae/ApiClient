@@ -11,11 +11,11 @@ namespace Jaeger;
 
 class Drive extends Client
 {
-    const UPLOAD_IMAGE_API = '/drive/upload-image';
+    const UPLOAD_IMAGE_API = '/drive/image';
 
     public function uploadImage($url)
     {
-        $response = $this->http->request('GET',self::UPLOAD_IMAGE_API,[
+        $response = $this->http->request('POST',self::UPLOAD_IMAGE_API,[
             'headers' => [
                 'Accept' => 'application/json',
                 'Authorization' => 'Bearer '.getenv('API_TOKEN'),
